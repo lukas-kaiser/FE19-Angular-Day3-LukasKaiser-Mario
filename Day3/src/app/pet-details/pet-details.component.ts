@@ -21,8 +21,6 @@ export class PetDetailsComponent implements OnInit{
    this.route.params.subscribe((params: Params) => {
     this.index = +params["petId"];
     this.pet= pets[this.index];
-    console.log(this.pet);
-
    })
   }
 }
